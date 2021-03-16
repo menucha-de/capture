@@ -4,7 +4,7 @@ import (
 	"errors"
 
 	guuid "github.com/google/uuid"
-	transport "github.com/peramic/transport"
+	"github.com/menucha-de/transport"
 )
 
 func GetCycles() map[string]CycleSpec {

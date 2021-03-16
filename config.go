@@ -6,8 +6,8 @@ import (
 	"os"
 	"sync"
 
-	tr "github.com/peramic/transport"
-	"github.com/peramic/logging"
+	"github.com/menucha-de/transport"
+	"github.com/menucha-de/logging"
 )
 
 const filename = "./conf/capture/capture.json"
@@ -76,7 +76,7 @@ func init() {
 func initConfiguration() *CycleConfiguration {
 	cycles := make(map[string]CycleSpec)
 	devices := make(map[string]Device)
-	subscriptors := make(map[string]map[string]tr.Subscriptor)
+	subscriptors := make(map[string]map[string]transport.Subscriptor)
 	config := CycleConfiguration{Cycles: cycles, Devices: devices, Subscriptors: subscriptors}
 
 	return &config
